@@ -117,11 +117,13 @@ List<Reminder> reminders = reminder.getAllReminders();
                     selected_reminder.Name = Console.ReadLine();
                     Console.WriteLine("Done!\n");
                     break;
+
                 case "2":
                     Console.Write("New message for reminder: ");
                     selected_reminder.Message = Console.ReadLine();
                     Console.WriteLine("Done!\n");
                     break;
+
                 case "3":
                     Console.Write("New time for reminder (in the format of yyyy-MM-dd HH:mm): ");
                     try
@@ -137,14 +139,14 @@ List<Reminder> reminders = reminder.getAllReminders();
                     catch (FormatException) 
                     {                         
                         Console.WriteLine("Invalid time format. Please use yyyy-MM-dd HH:mm");
-                        break;
                     }
-                    
+                    break;
+
                 case "4":
                     selected_reminder.IsDone = true;
                     Console.WriteLine("Done!\n");
                     break;
-            }
+                }
 
             break;
 
